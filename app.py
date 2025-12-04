@@ -22,6 +22,14 @@ def names(number):
 def home():
         return render_template("index.html")
 
+@app.route('/predict')
+def predict():
+        return render_template("predict.html")
+
+@app.route('/about')
+def about():
+        return render_template("about.html")
+
 @app.route('/success' , methods = ['GET' , 'POST'])
 def success():
     if request.method == 'POST':
