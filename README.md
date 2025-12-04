@@ -100,16 +100,6 @@ TumorTrace/
 - **Output**: Binary classification (Tumor/No Tumor) with confidence score
 - **Accuracy**: ~92%
 
-## Screenshots
-
-### Home Page
-Modern landing page with information about brain tumors and doctor consultation links.
-
-### Prediction Page
-Clean interface for uploading MRI scans.
-
-### Results Page
-Displays prediction results with confidence percentage.
 
 ## Team
 
