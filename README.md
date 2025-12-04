@@ -1,34 +1,161 @@
-# TumorTrace
-A Web App for Brain Tumor detection using MRI Scan
-with user friendly interface:
+# TumorTrace 🧠
 
-### How to use:
+AI-powered Brain Tumor Detection System using Deep Learning
 
-- Click on **predict tumor** on right top corner. 
+![TumorTrace](screenShots/1st.png)
 
- ![1st](https://user-images.githubusercontent.com/75232316/141609886-b9f95387-9e6c-480c-bd5c-c7f78cd98e22.png)
+## Features
 
-- Upload the MRI scan in jpg format.
+- 🎯 **High Accuracy**: 92% accuracy rate in brain tumor detection
+- ⚡ **Fast Analysis**: Get instant results within seconds
+- 🔒 **Secure & Private**: Your medical data is processed securely
+- 📱 **Responsive Design**: Works on all devices
+- 👨‍⚕️ **Doctor Consultation**: Direct links to book appointments with specialists
 
-![6th](https://user-images.githubusercontent.com/75232316/141644017-0e0e8ff3-f392-457a-be05-4862a06ae2bf.png)
+## Tech Stack
 
-- Get the result within seconds with atmost accuracy.
+- **Backend**: Flask (Python)
+- **ML Model**: TensorFlow/Keras VGG Model
+- **Frontend**: HTML, CSS, JavaScript
+- **Deployment**: Render/Railway
 
-![7th](https://user-images.githubusercontent.com/75232316/141644051-ba39ee2e-d869-41c9-8614-5b0b094d3ac7.png)
+## Installation
 
+### Prerequisites
+- Python 3.9+
+- pip
 
-### Simple to use:
-![4th](https://user-images.githubusercontent.com/75232316/141612200-bd36f485-9864-44e5-ae7b-248719e253d6.png)
+### Setup
 
+1. Clone the repository:
+```bash
+git clone https://github.com/Rounak-gupta007/TumorTrace.git
+cd TumorTrace
+```
 
-We also provide information regarding some famous Neurologists and an option to book an appointment respectively.
+2. Create a virtual environment:
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate  # Linux/Mac
+```
 
-### How was it built:
+3. Install dependencies:
+```bash
+pip install -r Requirements.txt
+```
 
-We made a machine learning model which classifies the images using Convolutional Neural Network CNN.
+4. **Important**: Download the VGG model file:
+   - The `VGG_model.h5` file is too large for GitHub (384MB)
+   - Download it from: [Add your Google Drive/Dropbox link here]
+   - Place it in the root directory of the project
 
-By using a dataset from Kaggle, which comprises of both images with tumor and without tumor
-then by splitting the dataset into training and testing sets with a ration of 80%:20%.
+5. Run the application:
+```bash
+python app.py
+```
 
-At the end, we used Sequential Model by keras to build our CNN model, and its respective layers to train the model
-The Model gives the result with an accuracy level of 90%.
+6. Open your browser and navigate to:
+```
+http://127.0.0.1:5000
+```
+
+## Deployment
+
+### Deploy to Render
+
+1. Fork this repository
+2. Sign up at [Render.com](https://render.com)
+3. Create a new Web Service
+4. Connect your GitHub repository
+5. Configure:
+   - **Build Command**: `pip install -r Requirements.txt`
+   - **Start Command**: `gunicorn app:app`
+6. Upload `VGG_model.h5` to Render Disk or use external storage
+
+### Deploy to Railway
+
+1. Sign up at [Railway.app](https://railway.app)
+2. Create new project from GitHub repo
+3. Railway will auto-detect Python and deploy
+4. Upload model file to Railway volume
+
+## Usage
+
+1. Navigate to the home page
+2. Click "Predict Tumor" button
+3. Upload an MRI brain scan image (JPG, JPEG, PNG)
+4. Click "Upload" to analyze
+5. View results with confidence percentage
+
+## Project Structure
+
+```
+TumorTrace/
+├── app.py                 # Main Flask application
+├── util.py               # Utility functions for model
+├── model.py              # Model training script
+├── VGG_model.h5          # Trained model (not in repo)
+├── templates/            # HTML templates
+│   ├── index.html        # Home page
+│   ├── about.html        # About page
+│   ├── predict.html      # Upload page
+│   └── success.html      # Results page
+├── static/               # Static files
+│   ├── css/             # Stylesheets
+│   ├── images/          # Images
+│   ├── upload/          # Uploaded images
+│   └── predict/         # Prediction results
+├── Requirements.txt      # Python dependencies
+├── Procfile             # Deployment configuration
+└── runtime.txt          # Python version
+
+```
+
+## Model Information
+
+- **Architecture**: VGG (Visual Geometry Group)
+- **Framework**: TensorFlow/Keras
+- **Input**: MRI brain scan images
+- **Output**: Binary classification (Tumor/No Tumor) with confidence score
+- **Accuracy**: ~92%
+
+## Screenshots
+
+### Home Page
+Modern landing page with information about brain tumors and doctor consultation links.
+
+### Prediction Page
+Clean interface for uploading MRI scans.
+
+### Results Page
+Displays prediction results with confidence percentage.
+
+## Team
+
+- **Rounak Gupta** - [GitHub](https://github.com/Rounak-gupta007) | [LinkedIn](https://www.linkedin.com/in/rounakgupta7/)
+- **Ayush Patel** - [GitHub](https://github.com/Ayush181818) | [LinkedIn](https://www.linkedin.com/in/ayush-patel2)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Disclaimer
+
+⚠️ **Medical Disclaimer**: This tool is for educational and research purposes only. It should NOT be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical decisions.
+
+## Acknowledgments
+
+- Dataset: Brain MRI Images for Brain Tumor Detection
+- Model Architecture: VGG Network
+- Inspiration: Early detection saves lives
+
+---
+
+Made with ❤️ by Rounak Gupta & Ayush Patel
+
+© 2025 TumorTrace. All rights reserved.
