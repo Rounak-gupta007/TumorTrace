@@ -42,7 +42,7 @@ source .venv/bin/activate  # Linux/Mac
 
 3. Install dependencies:
 ```bash
-pip install -r Requirements.txt
+pip install -r requirements.txt
 ```
 
 4. **Important**: Download the VGG model file:
@@ -69,7 +69,7 @@ http://127.0.0.1:5000
 3. Create a new Web Service
 4. Connect your GitHub repository
 5. Configure:
-   - **Build Command**: `pip install -r Requirements.txt`
+   - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `gunicorn app:app`
 6. Upload `VGG_model.h5` to Render Disk or use external storage
 
@@ -106,7 +106,7 @@ TumorTrace/
 │   ├── images/          # Images
 │   ├── upload/          # Uploaded images
 │   └── predict/         # Prediction results
-├── Requirements.txt      # Python dependencies
+├── requirements.txt      # Python dependencies
 ├── Procfile             # Deployment configuration
 └── runtime.txt          # Python version
 
