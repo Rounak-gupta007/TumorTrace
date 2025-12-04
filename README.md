@@ -2,7 +2,7 @@
 
 AI-powered Brain Tumor Detection System using Deep Learning
 
-![TumorTrace](screenShots/1st.png)
+![TumorTrace](screenShots/home-page.png)
 
 ## Features
 
