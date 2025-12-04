@@ -25,5 +25,5 @@ static/predict/*
 .DS_Store
 Thumbs.db
 
-# Model files (optional - uncomment if model is too large)
-# VGG_model.h5
+# Model files (too large for GitHub)
+VGG_model.h5
