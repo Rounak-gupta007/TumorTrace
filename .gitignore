@@ -27,3 +27,6 @@ Thumbs.db
 
 # Model files (too large for GitHub)
 VGG_model.h5
+
+# Dataset (too large for GitHub)
+brain_tumor_dataset/
