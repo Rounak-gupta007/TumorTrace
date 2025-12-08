@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 4. **Important**: Download the VGG model file:
    - The `VGG_model.h5` file is too large for GitHub (384MB)
-   - Download it from: [Add your Google Drive/Dropbox link here]
+   - Download it from: [https://drive.google.com/file/d/1tlhLq5mckwAfvjxedOIjEnx21eUjX7MJ/view?usp=sharing]
    - Place it in the root directory of the project
 
 5. Run the application:
@@ -59,26 +59,6 @@ python app.py
 ```
 http://127.0.0.1:5000
 ```
-
-## Deployment
-
-### Deploy to Render
-
-1. Fork this repository
-2. Sign up at [Render.com](https://render.com)
-3. Create a new Web Service
-4. Connect your GitHub repository
-5. Configure:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `gunicorn app:app`
-6. Upload `VGG_model.h5` to Render Disk or use external storage
-
-### Deploy to Railway
-
-1. Sign up at [Railway.app](https://railway.app)
-2. Create new project from GitHub repo
-3. Railway will auto-detect Python and deploy
-4. Upload model file to Railway volume
 
 ## Usage
 
@@ -120,29 +100,11 @@ TumorTrace/
 - **Output**: Binary classification (Tumor/No Tumor) with confidence score
 - **Accuracy**: ~92%
 
-## Screenshots
-
-### Home Page
-Modern landing page with information about brain tumors and doctor consultation links.
-
-### Prediction Page
-Clean interface for uploading MRI scans.
-
-### Results Page
-Displays prediction results with confidence percentage.
 
 ## Team
 
 - **Rounak Gupta** - [GitHub](https://github.com/Rounak-gupta007) | [LinkedIn](https://www.linkedin.com/in/rounakgupta7/)
 - **Ayush Patel** - [GitHub](https://github.com/Ayush181818) | [LinkedIn](https://www.linkedin.com/in/ayush-patel2)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Disclaimer
 
